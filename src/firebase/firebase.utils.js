@@ -38,9 +38,15 @@ firebase.initializeApp(config);
         return userRef;
       };
 
-      export const addCollectionAndDocuments = (collectionKey, objectstoAdd) => {
+      export const addCollectionAndDocuments = async (collectionKey, objectstoAdd) => {
         const collectionRef = firestore.collection(collectionKey);
-        console.log(collectionRef);
+
+        const batch = firestore.batch();
+        objectstoAdd.forEach(obj => {
+          const newDocRef = collectionRef.doc();
+          batch.set(newDocRef, obj);
+        });
+       return await batch.commit(); 
       }
 
       
