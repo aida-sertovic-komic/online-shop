@@ -12,10 +12,10 @@ const StripeCheckoutButton = ({ price }) => {
     return(
         <StripeCheckout 
             label='Plaćanje'
-            name='E-commerce shop'   
+            name='Gift shop'   
             billingAddress
             shippingAddress
-            image='' 
+            image=''
             description={`Ukupno: ${price} KM` }
             amount={priceForStripe}
             currency='BAM'
