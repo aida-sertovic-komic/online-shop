@@ -8,7 +8,7 @@ import CollectionPage from '../../pages/collection/collection.component';
 import { firestore, convertCollectionsSnapshotToMap } from '../../firebase/firebase.utils';
 import { updateCollections } from '../../redux/shop/shop.actions';
 import WithSpinner from '../../components/with-spinner/with-spinner.component';
-
+import './shop.styles.scss';
 
 const CollectionOverviewWithSpinner = WithSpinner(CollectionOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
@@ -37,7 +37,7 @@ class ShopPage extends React.Component {
 
    render(){
       const { match } = this.props;
-      const { loading } =this.state;
+      const { loading } = this.state;
       return(
          <div className='shop-page'>
                <Route exact path={`${match.path}`} render={(props) => <CollectionOverviewWithSpinner isLoading={loading}{...props} />} />

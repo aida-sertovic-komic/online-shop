@@ -35,8 +35,7 @@ const CheckoutPage = ({cartItems, total}) => (
         }
         <div className='total'>
            UKUPNO: {total} KM</div>
-        <StripeCheckoutButton price={total} />
-        
+    <StripeCheckoutButton price={total} />
     </div>
 );
 
