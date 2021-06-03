@@ -32,8 +32,8 @@
   }
 
   .StripeCheckout {
-    background: darkolivegreen !important;
-    transition: all 0.8 ease !important;
+    background: #333 !important;
+    transition: all 0.3s ease !important;
     margin-left: auto  !important;
     padding: 0 60px 0 60px !important;
     border-radius: 0% !important;
@@ -45,12 +45,11 @@
 
 
     &:hover {
-         opacity: 0.85 !important;
-         background: #f5f2f2 !important;
-         border: 1px solid darkolivegreen !important;
+         background: white !important;
+         border: 1px solid #333 !important;
 
          span {
-            color: darkolivegreen !important;      
+             color: #333 !important;      
          }
         }
 

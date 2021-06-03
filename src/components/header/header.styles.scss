@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
   background-color: #f5f2f2;
   position: fixed;
   padding: 0 20px;
@@ -14,9 +14,9 @@
     width: 10%;
     padding: 5px;
 
-    h2{
-      font-family: 'Dancing Script', cursive;
-      color: darkolivegreen;
+    h2 {
+      font-family: "Dancing Script", cursive;
+      color: #705b19;
     }
   }
 
@@ -30,6 +30,48 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
+      position: relative;
+      margin-right: 8px;
+
+      &:hover {
+        color: #705b19;
+      }
+     &.active {
+       color: #705b19;
+     }
+     &.active::after{
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background:#705b19;
+      top: 0px;
+      height: 1px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+     }
+    }
+    
+
+   
+    .option::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      background:#705b19;
+      top: 0px;
+      height: 1px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+    }
+    .option:hover::after {
+      width: 100%;
+      
     }
   }
 }
