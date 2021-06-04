@@ -19,12 +19,12 @@ const Header =  ({ currentUser, hidden }) => (
         
         <div className='options'>
             <NavLink exact activeClassName='active' className='option' to='/shop' > SHOP </NavLink>
-            <NavLink  exact activeClassName='active' className='option ' to='/contact'> CONTACT </NavLink>
+            <NavLink  exact activeClassName='active' className='option ' to='/contact'> KONTAKT </NavLink>
             {
                 currentUser ? 
-                <div className='option' onClick= { () => auth.signOut()}> SIGN OUT </div>
+                <div className='option' onClick= { () => auth.signOut()}> ODJAVA </div>
                 : (
-                <NavLink className='option' to='/signin' > SIGN IN </NavLink> 
+                <NavLink className='option' to='/signin' > PRIJAVA </NavLink> 
                 )
             }
             <CartIcon />

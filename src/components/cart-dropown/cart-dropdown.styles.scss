@@ -1,6 +1,7 @@
 .cart-dropdown {
+  font-family: 'Open Sans Condensed', sans-serif;
   position: absolute;
-  width: 240px;
+  width: 300px;
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -10,6 +11,8 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+  font-size: 19px;
+
 
   .empty-message {
     font-size: 18px;
@@ -25,5 +28,6 @@
 
   button {
     margin-top: auto;
+    
   }
 }
