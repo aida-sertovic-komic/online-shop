@@ -25,7 +25,7 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
-      alert("passwords don't match");
+      alert("Lozinka nije potvrđena.");
       return;
     }
 
@@ -58,15 +58,15 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
       <div className='sign-up'>
-        <h2 className='title'>I do not have a account</h2>
-        <span>Sign up with your email and password</span>
+        <h2 className='title'>Nemate račun?</h2>
+        <span>Unesite odgovarajuće podatke za registraciju.</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <FormInput
             type='text'
             name='displayName'
             value={displayName}
             onChange={this.handleChange}
-            label='Display Name'
+            label='Korisničko ime'
             required
           />
           <FormInput
@@ -74,7 +74,7 @@ class SignUp extends React.Component {
             name='email'
             value={email}
             onChange={this.handleChange}
-            label='Email'
+            label='E-mail'
             required
           />
           <FormInput
@@ -82,7 +82,7 @@ class SignUp extends React.Component {
             name='password'
             value={password}
             onChange={this.handleChange}
-            label='Password'
+            label='Lozinka'
             required
           />
           <FormInput
@@ -90,10 +90,10 @@ class SignUp extends React.Component {
             name='confirmPassword'
             value={confirmPassword}
             onChange={this.handleChange}
-            label='Confirm Password'
+            label='Potvrdi lozinku'
             required
           />
-          <CustomButton type='submit'>SIGN UP</CustomButton>
+          <CustomButton type='submit'>REGISTRACIJA</CustomButton>
         </form>
       </div>
     );

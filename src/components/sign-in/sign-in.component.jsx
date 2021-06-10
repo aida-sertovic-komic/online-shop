@@ -3,6 +3,7 @@ import './sign-in.styles.scss';
 import FormInput from '../form-input/form-input.component'; 
 import CustomButton from '../custom-button/custom-button.component';
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
+import googleLogo from './googleLogo.svg';
 
 class SignIn extends React.Component {
     constructor(props){
@@ -39,8 +40,8 @@ class SignIn extends React.Component {
     render() {
         return(
             <div className='sign-in'>
-                <h2> I already have a account </h2>
-                <span> Sign in with your email and password.</span>
+                <h2>Prijava</h2>
+                <span> Unesite e-mail i lozinku za prijavu.</span>
 
                 <form onSubmit={this.handleSubmit} > 
                     <FormInput
@@ -48,7 +49,7 @@ class SignIn extends React.Component {
                         type="email" 
                         handleChange={this.handleChange} 
                         value={ this.state.email } 
-                        label='email'
+                        label='E-mail'
                         required />
 
                     <FormInput 
@@ -56,12 +57,12 @@ class SignIn extends React.Component {
                         type="password" 
                         value = {this.state.password} 
                         handleChange={this.handleChange} 
-                        label='password'
+                        label='Lozinka'
                         required />
 
                     <div className="buttons">
-                    <CustomButton type="submit" >Sign in</CustomButton>
-                    <CustomButton type="button" onClick = {signInWithGoogle} isGoogleSignIn> Sign in with Google </CustomButton>
+                    <CustomButton type="submit" >PRIJAVA</CustomButton>
+                    <CustomButton className='googleSignIn' type="button" onClick = {signInWithGoogle} isGoogleSignIn> <img src={googleLogo} alt='googleSignin' /> </CustomButton>
                     </div>
                 </form>
             </div>

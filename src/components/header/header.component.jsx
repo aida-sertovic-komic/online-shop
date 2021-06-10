@@ -9,6 +9,7 @@ import CartDropdown from '../cart-dropown/cart-dropdown.component';
 import  { selectCartHidden } from '../../redux/cart/cart.selectors';
 import  { selectCurrentUser } from '../../redux/user/user.selector';
 import './header.styles.scss';
+import SearchPage from '../search-component/search.component';
 
 const Header =  ({ currentUser, hidden }) => (
     <div className='header'>
@@ -18,8 +19,10 @@ const Header =  ({ currentUser, hidden }) => (
         </NavLink>
         
         <div className='options'>
+            <SearchPage className='searchbox' />
             <NavLink exact activeClassName='active' className='option' to='/shop' > SHOP </NavLink>
             <NavLink  exact activeClassName='active' className='option ' to='/contact'> KONTAKT </NavLink>
+        
             {
                 currentUser ? 
                 <div className='option' onClick= { () => auth.signOut()}> ODJAVA </div>

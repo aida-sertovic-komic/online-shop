@@ -9,5 +9,25 @@
     .buttons {
         display: flex;
         justify-content: space-between;
-    }
+
+        .googleSignIn{
+            background-color: white;
+            min-width: 160px;
+            width: auto;
+            height: 50px;
+            cursor: pointer;
+            border: 1px solid #333;
+
+            &:hover{
+                background-color: #333;
+            }
+
+            img {
+                height: 30px;
+                padding: 0 35px;
+            }
+        }
+        }
+
+        
 }
