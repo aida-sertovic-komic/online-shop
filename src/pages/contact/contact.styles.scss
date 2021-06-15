@@ -19,6 +19,9 @@
                 }
 
                 .contact-form{
+                    margin-top: 0;
+
+                
 
                     textarea {
                         width: 100%;
@@ -34,8 +37,9 @@
                            border: 0 !important;
                        }
                     }
+                   
 
-                    button{
+                    .button{
                         text-align: center;
                         margin-top: 20px;
                         min-width: 165px;
@@ -44,7 +48,7 @@
                         border: 1px solid black;
                         background:black;
                         color: #d4af37;
-                        margin-left: 4em;
+                        margin-left: 5.5em;
 
                         &:hover{
                         background-color: white;
