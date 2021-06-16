@@ -7,7 +7,10 @@
   margin: 0px auto 0;
   padding-top: 90px;
   padding-bottom: 90px;
-  
+
+  .d-none {
+    display: none;
+  }
 
   .checkout-header {
     width: 100%;
@@ -33,10 +36,9 @@
   }
 
   .StripeCheckout {
-    
     background: #333 !important;
     transition: all 0.3s ease !important;
-    margin-left: auto  !important;
+    margin-left: auto !important;
     padding: 0 60px 0 60px !important;
     border-radius: 0% !important;
     min-width: 165px !important;
@@ -44,29 +46,29 @@
     height: 50px !important;
     margin-top: 15px;
 
-
+    &.d-none{
+      display: none;
+    }
 
     &:hover {
-         background: white !important;
-         border: 1px solid #333 !important;
+      background: white !important;
+      border: 1px solid #333 !important;
 
-         span {
-             color: #333 !important;      
-         }
-        }
+      span {
+        color: #333 !important;
+      }
+    }
 
     span {
-      font-family: 'Open Sans Condensed', sans-serif !important;
+      font-family: "Open Sans Condensed", sans-serif !important;
       background-image: none !important;
-      border-radius: none  !important;
+      border-radius: none !important;
       box-shadow: none !important;
       text-shadow: none !important;
       letter-spacing: 0.5px !important;
       line-height: 50px;
       font-size: 20px !important;
       padding: 0 35px;
-
-      
     }
   }
 }

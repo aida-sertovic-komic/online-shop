@@ -18,18 +18,14 @@ class ContactPage extends React.Component {
     }
 
     resetForm = () => {
-
-
         this.setState({
             ...this.state,
             name: '',
-            LastName: '',   
+            LastName: '',
             email: '',
             subject: '',
         })
-        document.getElementById("output").value="";
-        console.log('radi');
-
+        document.getElementById("output").value = "";
     }
 
     handleChange = event => {
@@ -42,15 +38,18 @@ class ContactPage extends React.Component {
 
     sendEmail(e) {
         e.preventDefault();
-    
-        emailjs.sendForm('service_p7ru5ev', 'template_gqm6vec', e.target, 'user_eSZqDBr2tvNQsFPZ6DN7P')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
 
-        }
+        emailjs.sendForm('service_p7ru5ev', 'template_gqm6vec', e.target, 'user_eSZqDBr2tvNQsFPZ6DN7P')
+            .then((result) => {
+                console.log(result.text);
+                document.querySelectorAll('.form-input').forEach(element => {
+                    element.value = '';
+                });
+                document.getElementById('successMessage').innerHTML = 'Hvala, uspješno ste poslali poruku.';
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
 
     render() {
         return (
@@ -62,8 +61,8 @@ class ContactPage extends React.Component {
                             <td className='secondColumn'>
                                 <h2>Pošalji nam poruku</h2>
                                 <form className='contact-form'
-                                
-                                onSubmit={this.sendEmail} >
+
+                                    onSubmit={this.sendEmail} >
                                     <FormInput
                                         name="name"
                                         type="text"
@@ -93,8 +92,9 @@ class ContactPage extends React.Component {
                                         label='Predmet'
                                         required />
 
-                                    <textarea 
+                                    <textarea
                                         id="output"
+                                        className="form-input"
                                         type="text"
                                         name="message"
                                         placeholder='Poruka'
@@ -102,7 +102,8 @@ class ContactPage extends React.Component {
                                         required>
                                         {this.state.message}
                                     </textarea>
-                                    <input type="submit" value="Pošalji" className='button' onClick={this.resetForm}/>
+                                    <input type="submit" value="Pošalji" className='button' />
+                                    <p id="successMessage"></p>
                                 </form>
                             </td>
                             <td className='thirdColumn'></td>
@@ -114,5 +115,12 @@ class ContactPage extends React.Component {
         )
     }
 }
+
+// #28a745
+// 1200 - @media screen only and (max-width: 1199) - ide css za 992
+// 992 - @media screen only and (max-width: 991) - ide css za 768
+// 768 - @media screen only and (max-width: 767) 
+// 576 - @media screen only and (max-width: 575) 
+
 
 export default ContactPage;
