@@ -1,0 +1,66 @@
+.product-page {
+  height: 80vh;
+  width: 100%;
+
+  table {
+    margin-top: 9em;
+    width: 100%;
+    height: 60vh;
+    padding-left: 4em;
+    padding-right: 4em;
+
+    tr {
+      width: 100%;
+      td {
+        width: 50%;
+
+        .image-container {
+          background-position: center;
+          // background-size: cover;
+          width: 100%;
+          height: 100%;
+        
+      }
+    }
+
+
+  .description-container {
+    background: white;
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    font-weight: bold;
+
+    .title {
+      font-family: "Dancing Script", cursive;
+      color: #705b19;
+      width: 100%;
+      font-weight: 600;
+      font-size: 3em;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 2em;
+    }
+    .price {
+      margin-bottom: 20px;
+    }
+
+    .description{
+      padding-bottom: 8rem;
+    }
+    .custom-button {
+      border-color: white;
+      display: flex;
+      padding-left: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 60px;
+      margin-top: 50px;
+
+    
+    }
+  }
+}
+  }
+}

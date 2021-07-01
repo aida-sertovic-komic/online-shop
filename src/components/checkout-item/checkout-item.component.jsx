@@ -1,15 +1,17 @@
 import React from 'react';
+
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.actions';
 
 import './checkout-item.styles.scss';
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
-    const { name, imageUrl, price, quantity } = cartItem;
+    const { id, name, imageUrl, price, quantity } = cartItem;
     return(
         <div className='checkout-item'>
         <div className='image-container'>
-            <img src={imageUrl} alt='item' />
+        <Link to={`/product/${id}`}><img src={imageUrl} alt='item' /></Link>
         </div>
         <span className='name'>{name}</span>
         <span className='quantity'>

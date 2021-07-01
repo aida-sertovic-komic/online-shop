@@ -4,10 +4,15 @@
   height: 80px;
   margin-bottom: 15px;
 
-  img {
+  a{
     width: 30%;
+  
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
   }
-
+  }
   .item-details {
     width: 70%;
     display: flex;

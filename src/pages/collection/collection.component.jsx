@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import CollectionItem from '../../components/collection-item/collection-item.component';
 
 import { selectCollection } from '../../redux/shop/shop.selectors';
@@ -14,7 +15,9 @@ const CollectionPage = ({ collection }) => {
             <div className='items'>
                 {
                     items.map(item => (
-                        <CollectionItem key={item.id} item={item} />
+                        <Link to={`/product/${item.id}`}>
+                            <CollectionItem key={item.id} item={item} />
+                        </Link>
                     ))
                 }
             </div>

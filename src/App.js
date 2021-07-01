@@ -11,6 +11,7 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import CheckoutPage from './pages/checkout/checkout.component';
 import SearchPage from './components/search-component/search.component';
 import ContactPage from './pages/contact/contact.component';
+ import ProductPage from './pages/product/product.component';
 
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
@@ -59,6 +60,8 @@ class App extends React.Component {
          <Route exact path='/checkout' component={CheckoutPage} />
          <Route exact path='/test' component={SearchPage} />
          <Route exact path='/contact' component={ContactPage}  />
+         <Route exact path='/product/:id' component={ProductPage} />
+
         </Switch>
         <Footer />
       </div> 

@@ -21,22 +21,29 @@
       display: flex;
       flex-direction: flex-start;
       justify-content: space-between !important;
-      padding-top: 20px;
+      padding-top: 0px;
       float: inline-end;
 
-      td {
+      td{
         width: 33.33%;
 
         img {
-          width: 100%;
-          vertical-align: middle;
-          height: 80px;
           object-fit: cover;
+          width: 100%;
+          height: 80px;
+          
         }
       }
+      td {
+        width: 33.33%;
+
+      }
+      
       .price {
         text-align: right !important;
+        
       }
     }
   }
 }
+
