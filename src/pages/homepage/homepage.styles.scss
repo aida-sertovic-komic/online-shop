@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
 
     table {
@@ -98,7 +98,6 @@
   }
 
   .category {
-    padding: 10px 40px;
     width: 95%;
     margin: 0 10px;
     text-align: center;
@@ -108,5 +107,45 @@
     border-right: white;
     border-left: white;
     border-bottom: white;
+  }
+
+  .benefits{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f2f2;
+    border: 1px solid transparent;
+
+    div{
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      // border: 1px solid transparent;
+    }
+
+    img {
+      min-height: 10px;
+      object-fit: cover;
+      height: 100px !important;
+      width: auto !important;
+      margin: 0 auto;
+      border: 1px solid transparent;
+
+      &:hover{
+        height: 110px !important;
+        width: auto !important;
+        transition: all 0.2s ease;
+      }
+    }
+    h2{
+      text-align: center;
+      font-family: "Questrial", sans-serif;
+      font-weight: lighter;
+    }
+  }
+  .popular-products{
+    font-family: 'Dancing Script';
   }
 }
