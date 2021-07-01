@@ -40,10 +40,10 @@ class ProductPage extends React.Component {
 
                         {collection.items.map(item => {
                            let link =(window.location.href).split('/')[4];
-                           console.log(link);
+                           // console.log(item);
                            if (link == item.id) {
                               return (
-                                 <ProductItems key={item.image} item={item} />
+                                 <ProductItems key={item.imageUrl} item={item} />
                               )
                            }
                            return false;
