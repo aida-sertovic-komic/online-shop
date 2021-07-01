@@ -84,7 +84,7 @@
                 margin-top: 0;
                 color: black !important;
                 text-align: center;
-                font-size: 60px;
+                font-size: 90px;
                 opacity: 1 !important;
               }
             }
@@ -103,7 +103,7 @@
     text-align: center;
     font-family: "Dancing Script", cursive;
     // border: 1px solid rgb(231, 235, 1);
-    font-size: 30px;
+    font-size: 35px;
     border-right: white;
     border-left: white;
     border-bottom: white;
@@ -118,6 +118,7 @@
     width: 100%;
     background-color: #f5f2f2;
     border: 1px solid transparent;
+    margin-top: 50px;
 
     div{
       flex: 0 0 33.33333%;
@@ -147,5 +148,6 @@
   }
   .popular-products{
     font-family: 'Dancing Script';
+    font-size: 35px;
   }
 }
