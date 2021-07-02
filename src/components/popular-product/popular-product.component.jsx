@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { firestore } from '../../firebase/firebase.utils';
+import { Link } from 'react-router-dom';
 import './popular-product.styles.scss';
 
 class PopularProduct extends React.Component {
@@ -36,7 +37,9 @@ class PopularProduct extends React.Component {
                                 {collection.items.map(item => {
                                     if (item.price > 140) {
                                         return (
-                                            <div><img src={item.imageUrl} alt='item' /><h5>{item.name}</h5></div>
+                                            <div><Link to={`/product/${item.id}`}><img src={item.imageUrl} alt='item' /></Link>
+                                            <h6>{item.name}</h6>
+                                            </div>
 
                                         )
                                     }

@@ -13,12 +13,21 @@
           div{
             height: 100%;
             width: 100%;
+
             img{
               object-fit: cover;
-              height: 150px !important;
-              width: 200px !important;
-              margin: 0 auto;
+              height: 180px !important;
+              width: 240px !important;
+              margin: 0 10px;
               border: 1px solid transparent;
+            }
+
+            h6{
+              text-align: center;
+              font-family: 'Questrial', sans-serif;
+              font-weight: lighter;
+              margin-top: 3px;
+              font-size: 0.5em;
             }
           }
         }

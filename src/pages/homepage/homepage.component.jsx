@@ -32,7 +32,7 @@ const HomePage = ({ collections }) => (
             </table>
         </div>
         <div className='category'>
-            <h1>Kategorije</h1>
+            <h2>Kategorije</h2>
         </div>
         <Directory />
         <div className='benefits'>
@@ -50,7 +50,7 @@ const HomePage = ({ collections }) => (
             </div>
         </div>
         <div className='popular-products'>
-            <h1>Izdvajamo iz ponude</h1>
+            <h2>Izdvajamo iz ponude</h2>
             <PopularProduct />
         </div>
     </div>

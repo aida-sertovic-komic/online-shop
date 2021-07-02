@@ -18,7 +18,8 @@ const ProductItems = ({ item, addItem }) => {
 
                             style={{
                                 backgroundImage: `url(${imageUrl})`,
-                                backgroundSize: `cover`,
+                                backgroundSize: `contain`,
+                                backgroundRepeat: `no-repeat`,
                                 height: `100%`,
                                 width: `100%`
                             }}
