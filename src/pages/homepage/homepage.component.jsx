@@ -2,13 +2,16 @@ import React from 'react';
 import Directory from '../../components/directory/directory.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import { Link } from 'react-router-dom';
+import PopularProduct from '../../components/popular-product/popular-product.component';
+// import CollectionPreview from '../../components/preview-collection/collection-preview.component';
+// import CollectionItem from '../../components/collection-item/collection-item.component';
 import coverPhoto from './coverPhoto.jpg';
 import clock from './clock.png';
 import creditCard from './creditCard.png';
 import freeShipping from './freeShipping.png';
 import './homepage.styles.scss';
 
-const HomePage = () => (
+const HomePage = ({ collections }) => (
 
     <div className='homepage'>
         <img src={coverPhoto} alt='cover' />
@@ -48,6 +51,7 @@ const HomePage = () => (
         </div>
         <div className='popular-products'>
             <h1>Izdvajamo iz ponude</h1>
+            <PopularProduct />
         </div>
     </div>
 );

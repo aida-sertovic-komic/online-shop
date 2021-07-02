@@ -29,8 +29,8 @@
     table {
       margin-top: 200px;
       width: 100%;
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
       position: relative;
 
       tbody {
@@ -38,15 +38,16 @@
         height: 100%;
 
         tr {
+          // width: 100vw;
           .firstColumn {
-            width: 26%;
+            width: 25%;
           }
           .secondColumn {
-            width: 1200px;
+            width: 50%;
             background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             opacity: 0.8;
             height: 600px;
             border: 1px solid #4c4703;
@@ -90,7 +91,7 @@
             }
           }
           .third {
-            width: 33.33%;
+            width: 25%;
           }
         }
       }
@@ -149,5 +150,9 @@
   .popular-products{
     font-family: 'Dancing Script';
     font-size: 35px;
+
+    h1{
+      text-align: center;
+    }
   }
 }
