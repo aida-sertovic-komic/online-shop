@@ -23,32 +23,31 @@
 
                 
 
-                    textarea {
-                        width: 100%;
-                        height: 35px;
-                        border: 0;
-                        overflow: auto;
-                        padding-left: 4px;
-                        padding-top: 5px;
-                        border-bottom: 1px solid grey;
+                    // textarea {
+                    //     width: 100%;
+                    //     height: 35px;
+                    //     border: 0;
+                    //     overflow: auto;
+                    //     padding-left: 4px;
+                    //     padding-top: 5px;
+                    //     border-bottom: 1px solid grey;
 
-                       &:focus {
-                           height: 70px;
-                           border: 0 !important;
-                       }
-                    }
+                    //    &:focus {
+                    //        height: 70px;
+                    //        border: 0 !important;
+                    //    }
+                    // }
                    
 
                     .button{
                         text-align: center;
-                        margin-top: 20px;
+                        margin-top: 0px;
                         min-width: 165px;
-                        width: auto;
+                        width: 100%;
                         height: 50px;
                         border: 1px solid black;
                         background:black;
                         color: #d4af37;
-                        margin-left: 5.5em;
 
                         &:hover{
                         background-color: white;

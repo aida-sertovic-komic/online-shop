@@ -92,7 +92,7 @@ class ContactPage extends React.Component {
                                         label='Predmet'
                                         required />
 
-                                    <textarea
+                                    {/* <textarea
                                         id="output"
                                         className="form-input"
                                         type="text"
@@ -101,9 +101,16 @@ class ContactPage extends React.Component {
                                         handleChange={this.handleChange}
                                         required>
                                         {this.state.message}
-                                    </textarea>
+                                    </textarea> */}
+                                    <FormInput
+                                        name="message"
+                                        type="text"
+                                        handleChange={this.handleChange}
+                                        value={this.state.message}
+                                        label='Poruka'
+                                        required />
                                     <input type="submit" value="Pošalji" className='button' />
-                                    <p id="successMessage"></p>
+                                    {/* <p id="successMessage"></p> */}
                                 </form>
                             </td>
                             <td className='thirdColumn'></td>
