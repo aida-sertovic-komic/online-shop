@@ -31,24 +31,25 @@ const HomePage = ({ collections }) => (
                 </tbody>
             </table>
         </div>
+        <div className='benefits'>
+            <div>
+                <img src={freeShipping} alt='freeShipping' />
+                <h3>BESPLATNA DOSTAVA</h3>
+            </div>
+            <div>
+                <img src={clock} alt='clock' />
+                <h3>ISPORUKA ZA 2 DANA</h3>
+            </div>
+            <div>
+                <img src={creditCard} alt='creditCard' />
+                <h3>KARTIČNO PLAĆANJE</h3>
+            </div>
+        </div>
         <div className='category'>
             <h2>Kategorije</h2>
         </div>
         <Directory />
-        <div className='benefits'>
-            <div>
-                <img src={freeShipping} alt='freeShipping' />
-                <h2>BESPLATNA DOSTAVA</h2>
-            </div>
-            <div>
-                <img src={clock} alt='clock' />
-                <h2>ISPORUKA ZA 2 DANA</h2>
-            </div>
-            <div>
-                <img src={creditCard} alt='creditCard' />
-                <h2>KARTIČNO PLAĆANJE</h2>
-            </div>
-        </div>
+        
         <div className='popular-products'>
             <h2>Izdvajamo iz ponude</h2>
             <PopularProduct />

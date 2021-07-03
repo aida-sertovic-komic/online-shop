@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0px 70px 0px;
+  padding: 0px 0px 70px 0px;
   position: relative;
 
   img {
@@ -12,7 +12,7 @@
     object-fit: cover;
     min-height: 290px;
     width: 100vw !important;
-    padding: 20px 0px 20px 0px !important;
+    // padding: 20px !important;
   }
 
   .overlay {
@@ -101,10 +101,17 @@
     text-align: center;
     font-family: "Dancing Script", cursive;
     // border: 1px solid rgb(231, 235, 1);
-    font-size: 35px;
+    font-size: 38px;
     border-right: white;
     border-left: white;
     border-bottom: white;
+  
+
+    h2{
+      font-size: 38px;
+      color: #705b19;
+      margin-top: 40px;
+    }
   }
 
   .benefits{
@@ -116,7 +123,7 @@
     width: 100%;
     background-color: #f5f2f2;
     border: 1px solid transparent;
-    margin-top: 50px;
+    margin-top: 0px;
 
     div{
       flex: 0 0 33.33333%;
@@ -127,29 +134,37 @@
     img {
       min-height: 10px;
       object-fit: cover;
-      height: 100px !important;
+      height: 70px !important;
       width: auto !important;
       margin: 0 auto;
       border: 1px solid transparent;
 
       &:hover{
-        height: 110px !important;
+        // height: 80px !important;
+        transform: scale(1.1);
         width: auto !important;
         transition: all 0.2s ease;
       }
     }
-    h2{
+    h3{
       text-align: center;
       font-family: "Questrial", sans-serif;
       font-weight: lighter;
+      
     }
   }
   .popular-products{
     font-family: 'Dancing Script';
-    font-size: 35px;
+    font-size: 38px;
+    background-color: #f5f2f2;
+    margin: 0;
+    width: 100%;
 
     h2{
       text-align: center;
+      font-size: 38px;
+      color: #705b19;
+      margin-top: 40px;
     }
   }
 }

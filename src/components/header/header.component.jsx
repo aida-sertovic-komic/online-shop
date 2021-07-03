@@ -20,6 +20,7 @@ const Header =  ({ currentUser, hidden }) => (
         
         <div className='options'>
             <SearchPage className='searchbox' />
+            <NavLink exact activeClassName='active' className='option' to='/' > POČETNA </NavLink>
             <NavLink exact activeClassName='active' className='option' to='/shop' > SHOP </NavLink>
             <NavLink  exact activeClassName='active' className='option ' to='/contact'> KONTAKT </NavLink>
         

@@ -21,7 +21,7 @@ const CollectionItem = ({item, addItem}) => {
     />
         <div className='collection-footer'>
             <span className='name'> {name} </span>
-            <span className='price'> {price} </span>
+            <span className='price'> {price}KM </span>
             </div>        
             
             <CustomButton onClick={()  => addItem(item)} inverted> Dodaj u košaricu</CustomButton>
