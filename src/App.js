@@ -61,7 +61,6 @@ class App extends React.Component {
          <Route exact path='/test' component={SearchPage} />
          <Route exact path='/contact' component={ContactPage}  />
          <Route exact path='/product/:id' component={ProductPage} />
-
         </Switch>
         <Footer />
       </div> 
