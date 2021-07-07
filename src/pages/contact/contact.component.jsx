@@ -110,7 +110,7 @@ class ContactPage extends React.Component {
                                         label='Poruka'
                                         required />
                                     <input type="submit" value="Pošalji" className='button' />
-                                    {/* <p id="successMessage"></p> */}
+                                     <p id="successMessage"></p> 
                                 </form>
                             </td>
                             <td className='thirdColumn'></td>

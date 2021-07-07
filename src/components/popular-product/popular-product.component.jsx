@@ -2,6 +2,10 @@ import React from 'react';
 
 import { firestore } from '../../firebase/firebase.utils';
 import { Link } from 'react-router-dom';
+
+// import CustomButton from '../custom-button/custom-button.component';
+// import {addItem} from '../../redux/cart/cart.actions';
+
 import './popular-product.styles.scss';
 
 class PopularProduct extends React.Component {
@@ -37,7 +41,7 @@ class PopularProduct extends React.Component {
                                 {collection.items.map(item => {
                                     if (item.price > 140) {
                                         return (
-                                            <div><Link to={`/product/${item.id}`}><img src={item.imageUrl} alt='item' /></Link>
+                                            <div><Link to={`/product/${item.id}`}><img src={item.imageUrl} alt='item'></img></Link>
                                             <h6>{item.name}</h6>
                                             </div>
 

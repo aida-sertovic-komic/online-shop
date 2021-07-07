@@ -7,4 +7,4 @@ This project is a fully functional e-commerce application, featuring user authen
 **Tools and technologies:** HTML5, CSS3, JavaScript, ES6+, React.js, Redux, Firebase, Stripe.
 
 ## Screenshot
-![image](public/signinPicture.jpg)
+![image](public/signinPicture.jpeg)

@@ -6,3 +6,13 @@
     padding-top: 90px;
     padding-bottom: 90px;
 }
+
+@media (max-width: 991.98px){
+    .sign-in-and-sign-up{
+        width: 700px;
+
+        .sign-in{
+            padding-right: 20px;
+        }
+    }
+}

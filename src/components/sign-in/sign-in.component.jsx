@@ -61,7 +61,7 @@ class SignIn extends React.Component {
                         required />
 
                     <div className="buttons">
-                    <CustomButton type="submit" >PRIJAVA</CustomButton>
+                    <CustomButton type="submit" >PRIJAVA</CustomButton> 
                     <CustomButton className='googleSignIn' type="button" onClick = {signInWithGoogle} isGoogleSignIn> <img src={googleLogo} alt='goo' /> </CustomButton>
                     </div>
                 </form>

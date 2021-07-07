@@ -30,4 +30,17 @@
             }
           }
         }
-      
+      @media (max-width: 991.98px) {
+        .popular-page{
+          height: auto;
+          div{
+
+            img{
+              min-height: 110px;
+            }
+            h6{
+              font-size: 0.35em;
+            }
+          }
+        }
+      }

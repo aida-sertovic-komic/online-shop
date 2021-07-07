@@ -12,6 +12,7 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+   
   }
 
 .custom-button {
@@ -20,6 +21,7 @@
   position: absolute;
   top: 255px;
   display: none;
+
 }
 &:hover {
   .image {
@@ -47,6 +49,17 @@
 
     .price {
       width: 20%;
+    }
+  }
+}
+@media (max-width: 991.98px){
+  .collection-item {
+    height: 300px;
+    .collection-footer {
+      font-size: 14px;
+    }
+     .image{
+      height: 250px;
     }
   }
 }
