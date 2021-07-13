@@ -144,6 +144,7 @@
         transform: scale(1.1);
         width: auto !important;
         transition: all 0.2s ease;
+        
       }
     }
     h3{
@@ -193,3 +194,33 @@
     }
 }
 }
+@media (max-width: 767.98px) {
+  .homepage{
+    .overlay table tbody tr .secondColumn .gift-shop {
+      
+      min-height: 200px;
+      h1{
+        font-size: 40px;
+      }
+      .custom-button{
+        font-size: 12px;
+      }
+    }
+    
+    .benefits{
+      height: 200px;
+  
+      img{
+        height: 40px  !important;
+      }
+  
+      h3{
+        font-size: 14px;
+      }
+      }
+      .popular-products{
+    
+        font-size: 28px;
+      }
+  }
+  }

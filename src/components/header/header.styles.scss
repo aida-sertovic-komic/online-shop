@@ -1,96 +1,91 @@
-.header {
-  height: 70px;
+.navbar {
+  // height: 70px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   margin-bottom: 60px;
   background-color: #fff;
   position: fixed;
   padding: 0 20px;
   z-index: 1;
-  top:0;
-  font-family: 'Questrial', sans-serif;
+  top: 0;
+  font-family: "Questrial", sans-serif;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-
-  .logo-container {
-    height: 85%;
-    width: 10%;
-    padding: 5px;
-
-    h2 {
-      font-family: "Dancing Script", cursive;
-      color: #705b19;
-    }
+  h2 {
+    font-family: "Dancing Script", cursive;
+    color: #705b19;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 
-  .options {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  // .options {
+  //   width: 50%;
+  //   height: 100%;
+  //   display: none;
+  //   align-items: center;
+  //   justify-content: flex-end;
 
-  
-    .option {
-      padding: 10px 15px;
-      cursor: pointer;
-      position: relative;
-      margin-right: 8px;
+  .option {
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
 
-      &:hover {
-        color: #705b19;
-      }
-     &.active {
-       color: #705b19;
-     }
-     &.active::after{
+    &:hover {
+      color: #705b19 !important;
+    }
+
+    &.active {
+      color: #705b19 !important;
+    }
+
+    &.active::after {
       content: "";
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      background:#705b19;
+      background: #705b19 !important;
       top: 0px;
       height: 1px;
       -webkit-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s;
       transition: all 0.2s ease 0s;
-     }
     }
-    
+    // }
 
-   
-    .option::after {
+    &::after {
       content: "";
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       width: 0%;
-      background:#705b19;
+      background: #705b19;
       top: 0px;
       height: 1px;
       -webkit-transition: all 0.2s ease 0s;
       -o-transition: all 0.2s ease 0s;
       transition: all 0.2s ease 0s;
     }
-    .option:hover::after {
+
+    &:hover::after {
       width: 100%;
-      
     }
   }
 
   .resolution {
-    display: none;
+    #navbarScrollingDropdown {
+      background-image: url("https://pics.freeicons.io/uploads/icons/png/15211315791553239378-512.png");
+    }
   }
 }
 
-@media (max-width: 991px){
-  .header{
-    h2{
+@media (max-width: 991px) {
+  .navbar {
+    h2 {
       font-size: 18px;
       padding-top: 5px;
     }
   }
-  
 }
