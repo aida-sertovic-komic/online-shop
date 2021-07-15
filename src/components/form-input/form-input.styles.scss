@@ -52,3 +52,8 @@ $main-color: #333;
      }
   }
 }
+@media (max-width: 767.98px) {
+  .group .form-input {
+    width: 180px;
+  }
+}

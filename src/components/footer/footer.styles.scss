@@ -28,3 +28,18 @@
 
   }
 }
+@media (max-width: 767.98px) {
+  .footer-container {
+    min-width: 700px;
+    // max-width: 768px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-container {
+    // min-width: 200px !important;
+    // max-width: 768px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

@@ -196,6 +196,10 @@
 }
 @media (max-width: 767.98px) {
   .homepage{
+
+    .backgroundImage {
+      min-width: 700px;
+    }
     .overlay table tbody tr .secondColumn .gift-shop {
       
       min-height: 200px;

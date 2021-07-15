@@ -14,7 +14,7 @@ import './homepage.styles.scss';
 const HomePage = ({ collections }) => (
 
     <div className='homepage'>
-        <img src={coverPhoto} alt='cover' />
+        <img src={coverPhoto} alt='cover' className='backgroundImage'/>
         <div className='overlay'>
             <table>
                 <tbody>

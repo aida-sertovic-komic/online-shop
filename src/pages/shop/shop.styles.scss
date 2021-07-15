@@ -1,3 +1,14 @@
 .shop-page{
     padding: 90px 40px 90px 40px;
 }
+@media (max-width: 767.98px){
+    .shop-page  {
+        min-width: 700px;
+    }
+}
+
+@media (max-width: 575.98px){
+    .shop-page  {
+        min-width: 500px;
+    }
+}

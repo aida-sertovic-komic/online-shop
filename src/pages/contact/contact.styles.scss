@@ -64,3 +64,25 @@
             }
         }
     }
+
+@media (max-width: 767.98px) {
+    .contact-page{
+        table{
+            .firstColumn{
+                width: 30%;
+            }
+            .secondColumn{
+                width: 40%;
+                padding-bottom: 80px;
+                padding-left: 70px;
+                h2{
+                    font-size: 24px;
+                }
+            }
+            .thirdColumn{
+                width: 30%;
+            }
+        }
+    }
+    
+}

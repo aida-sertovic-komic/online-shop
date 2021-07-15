@@ -52,14 +52,35 @@
     }
   }
 }
-@media (max-width: 991.98px){
+@media (max-width: 767.98px){
   .collection-item {
-    height: 300px;
+    height: 280px;
+    width: 20vw;
+    padding-left: 4px;
+    padding-right: 4px;
+
     .collection-footer {
-      font-size: 14px;
+      font-size: 12px;
+      width: 160px;
     }
      .image{
-      height: 250px;
+      height: 230px;
+      width: 160px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .collection-item {
+    height: 220px;
+    width: 32vw;
+    
+    .collection-footer {
+      font-size: 1px;
+      width: 160px;
+    }
+     .image{
+      height: 230px;
+      width: 160px;
     }
   }
 }
