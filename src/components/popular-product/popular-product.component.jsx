@@ -31,7 +31,6 @@ class PopularProduct extends React.Component {
     render() {
         return (
             <div className='popular-page'>
-
                 {
                     this.state.collections &&
                     this.state.collections.length > 0 &&
@@ -41,20 +40,22 @@ class PopularProduct extends React.Component {
                                 {collection.items.map(item => {
                                     if (item.price > 140) {
                                         return (
-                                            <div><Link to={`/product/${item.id}`}><img src={item.imageUrl} alt='item'></img></Link>
-                                            <h6>{item.name}</h6>
+                                            <div>
+                                                <Link to={`/product/${item.id}`}>
+                                                    <img src={item.imageUrl} alt='item'></img>
+                                                </Link>
+                                                <h6>{item.name}</h6>
                                             </div>
 
                                         )
                                     }
+                                    return null;
                                 })}
                             </>
                         )
                     })
                 }
-
             </div>
-
         )
     }
 }

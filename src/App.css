@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 a,
@@ -19,9 +20,9 @@ a:visited {
   box-sizing: border-box;
 }
 
-@media (max-width: 767.98px){
-body{
-  min-width: 700px;
-}
-
+@media (max-width: 767.98px) {
+  body {
+    /* min-width: 700px; */
+    min-height: 100vh;
+  }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const SearchBox = ({searchChange, displayChange, displayNone }) => {
+const SearchBox = ({ searchChange, displayChange, displayNone }) => {
     return (
         <div className='pa1'>
-            <input 
+            <input
                 className='ba pa2 b--light-gray'
-                type='search' 
+                type='search'
                 placeholder='Traži...'
                 onChange={searchChange}
                 onFocus={displayChange}

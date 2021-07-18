@@ -1,19 +1,23 @@
-.test-page {
+.search-page {
   padding-top: 0px;
+  display: flex !important;
+  position: absolute;
+  right: 480px;
 
   .collectionDropdown {
     font-family: "Open Sans Condensed", sans-serif;
     position: absolute;
-    width: 300px;
+    width: 340px;
     height: 340px;
     display: none;
     flex-direction: column;
     padding: 20px;
     border: 1px solid #333;
     background-color: white;
-    top: 90px;
-    right: 360px;
+    top: 61px;
+    left: 0;
     overflow: auto;
+    z-index: 1;
 
     tr {
       visibility: visible !important;
@@ -24,26 +28,46 @@
       padding-top: 0px;
       float: inline-end;
 
-      td{
+      td {
         width: 33.33%;
 
         img {
           object-fit: cover;
           width: 100%;
           height: 80px;
-          
         }
       }
+
       td {
         width: 33.33%;
-
       }
-      
+
       .price {
         text-align: right !important;
-        
       }
     }
   }
 }
 
+@media (max-width: 991px) {
+  .search-page {
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    .pa1 {
+      padding: 0;
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .collectionDropdown {
+      top: 40px;
+      width: 100%;
+    }
+  }
+}

@@ -25,24 +25,24 @@ class ShopPage extends React.Component {
       const collectionRef = firestore.collection('collections');
 
       fetch('https://firestore.googleapis.com/v1/projects/online-shop-af18f/databases/(default)/documents/collections')
-      .then(response => response.json())
-      .then(collections => console.log(collections));
+         .then(response => response.json());
+      // .then(collections => console.log(collections));
 
-       collectionRef.get().then(snapshot => {
-       const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
-          updateCollections(collectionsMap); 
-          this.setState({ loading: false });
-       });  
+      collectionRef.get().then(snapshot => {
+         const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
+         updateCollections(collectionsMap);
+         this.setState({ loading: false });
+      });
    }
 
-   render(){
+   render() {
       const { match } = this.props;
       const { loading } = this.state;
-      return(
+      return (
          <div className='shop-page'>
-               <Route exact path={`${match.path}`} render={(props) => <CollectionOverviewWithSpinner isLoading={loading}{...props} />} />
-               <Route path={`${match.path}/:collectionId`} render= {(props) => <CollectionPageWithSpinner isLoading={loading}{...props} />}/>
-       </div>        
+            <Route exact path={`${match.path}`} render={(props) => <CollectionOverviewWithSpinner isLoading={loading}{...props} />} />
+            <Route path={`${match.path}/:collectionId`} render={(props) => <CollectionPageWithSpinner isLoading={loading}{...props} />} />
+         </div>
       )
    }
 }

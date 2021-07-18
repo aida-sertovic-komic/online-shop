@@ -41,7 +41,7 @@ class ContactPage extends React.Component {
 
         emailjs.sendForm('service_p7ru5ev', 'template_gqm6vec', e.target, 'user_eSZqDBr2tvNQsFPZ6DN7P')
             .then((result) => {
-                console.log(result.text);
+                // console.log(result.text);
                 document.querySelectorAll('.form-input').forEach(element => {
                     element.value = '';
                 });

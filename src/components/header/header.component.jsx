@@ -9,6 +9,7 @@ import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropown/cart-dropdown.component';
 import { selectCartHidden } from '../../redux/cart/cart.selectors';
 import { selectCurrentUser } from '../../redux/user/user.selector';
+import SearchPage from '../search-component/search.component';
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => (
@@ -42,13 +43,6 @@ const Header = ({ currentUser, hidden }) => (
 
         {/* <div className='resolution'> */}
 
-        <CartIcon />
-
-        {
-            hidden ? null :
-                <CartDropdown />
-        }
-
         <Navbar bg="white" expand="lg">
             <Navbar.Brand href="#home">
                 <NavLink className='logo-container' to="/">
@@ -57,6 +51,12 @@ const Header = ({ currentUser, hidden }) => (
                 </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <SearchPage className='searchbox' />
+            <CartIcon />
+            {
+                hidden ? null :
+                    <CartDropdown />
+            }
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <NavLink exact activeClassName='active' className='option' to='/' > POČETNA </NavLink>
@@ -69,6 +69,7 @@ const Header = ({ currentUser, hidden }) => (
                                 <NavLink className='option' to='/signin' > PRIJAVA </NavLink>
                             )
                     }
+                    <CartIcon />
                 </Nav>
                 {/* <Form  */}
             </Navbar.Collapse>

@@ -9,7 +9,6 @@ import './product.styles.scss';
 class ProductPage extends React.Component {
    state = {
       collections: null
-
    }
 
    componentDidMount() {
@@ -24,22 +23,18 @@ class ProductPage extends React.Component {
          })
          .catch(error => console.log(error))
    }
+   
    render() {
-
-
       return (
-
          <div className='product-page'>
-
             {
                this.state.collections &&
                this.state.collections.length > 0 &&
                this.state.collections.map(collection => {
                   return (
                      <>
-
                         {collection.items.map(item => {
-                           let link =(window.location.href).split('/')[4];
+                           let link = (window.location.href).split('/')[4];
                            // console.log(item);
                            if (link == item.id) {
                               return (
@@ -51,7 +46,6 @@ class ProductPage extends React.Component {
                         }
                      </>
                   )
-
                })
             }
          </div>

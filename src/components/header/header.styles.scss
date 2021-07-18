@@ -12,6 +12,12 @@
   font-family: "Questrial", sans-serif;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
+  .navbar-collapse {
+    .cart-icon {
+      display: flex !important;
+    }
+  }
+
   h2 {
     font-family: "Dancing Script", cursive;
     color: #705b19;
@@ -87,6 +93,14 @@
     h2 {
       font-size: 18px;
       padding-top: 5px;
+    }
+
+    .navbar-collapse {
+      margin-top: 70px;
+
+      .cart-icon {
+        display: none !important;
+      }
     }
   }
 }
