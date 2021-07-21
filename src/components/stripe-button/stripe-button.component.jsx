@@ -8,10 +8,19 @@ const StripeCheckoutButton = ({ price }) => {
 
     const onToken = token => {
         // console.log(token);
-        alert('Uspješno plaćanje');
-    }
-    return (
 
+        const removeButtons = document.getElementsByClassName('remove-button');
+        const removeButtonsLength = removeButtons.length;
+        for (let i = 0; i < removeButtonsLength; i++) {
+            document.querySelector('.remove-button').click();
+        }
+
+        alert('Uspješno plaćanje');
+
+        window.location.href = '/';
+    }
+
+    return (
         <StripeCheckout
             label='Plaćanje'
             name='Gift shop'
