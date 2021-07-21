@@ -1,68 +1,69 @@
 .sign-in {
-    width: 380px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+
+  h2{
+      margin: 10px 0;
+  }
+
+  .title {
+    margin: 10px 0;
+  }
+
+  .buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 
-    .title {
-        margin: 10px 0;
+    .googleSignIn {
+      background-color: white;
+      min-width: 160px;
+      width: auto;
+      height: 50px;
+      cursor: pointer;
+      border: 1px solid #333;
+
+      &:hover {
+        background-color: #333;
+      }
+
+      img {
+        height: 30px;
+        padding: 0 35px;
+      }
     }
-    .buttons {
-        display: flex;
-        justify-content: space-between;
-
-        .googleSignIn{
-            background-color: white;
-            min-width: 160px;
-            width: auto;
-            height: 50px;
-            cursor: pointer;
-            border: 1px solid #333;
-
-            &:hover{
-                background-color: #333;
-            }
-
-            img {
-                height: 30px;
-                padding: 0 35px;
-            }
-        }
-        }
-
-        
+  }
 }
 
 @media (max-width: 767.98px) {
-    .sign-in {
-        padding-left: 30px;
-        padding-right: 50px !important;
-        margin-left: 10px;
-        h2{
-            font-size: 24px !important;
+  .sign-in {
+    padding-left: 30px;
+    padding-right: 50px !important;
+    margin-left: 10px;
+    h2 {
+      font-size: 24px !important;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .googleSignIn {
+        background-color: white;
+        min-width: 160px;
+        width: auto;
+        height: 50px;
+        cursor: pointer;
+        border: 1px solid #333;
+
+        &:hover {
+          background-color: #333;
         }
-        .buttons {
-            display: flex;
-            justify-content: space-between;
-    
-            .googleSignIn{
-                background-color: white;
-                min-width: 160px;
-                width: auto;
-                height: 50px;
-                cursor: pointer;
-                border: 1px solid #333;
-    
-                &:hover{
-                    background-color: #333;
-                }
-    
-                img {
-                    height: 30px;
-                    padding: 0 35px;
-                }
-            }
-            }
-    
-            
-    }   
+
+        img {
+          height: 30px;
+          padding: 0 35px;
+        }
+      }
+    }
+  }
 }

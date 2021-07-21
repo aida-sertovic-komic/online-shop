@@ -8,39 +8,36 @@
   width: 100% !important;
   padding: 40px;
 
-  
-          
+  div {
+    width: 25%;
+    padding: 0 10px;
 
-          div{
-            width: 25%;
-            padding: 0 10px;
+    img {
+      object-fit: cover !important;
+      height: 180px !important;
+      padding: 0 !important;
+    }
 
-            img{
-              object-fit: cover !important;
-              height: 180px !important;
-             padding: 0 !important;
-            }
+    h6 {
+      text-align: center;
+      font-family: "Questrial", sans-serif;
+      font-weight: lighter;
+      margin-top: 10px;
+      font-size: 0.5em;
+    }
+  }
+}
 
-            h6{
-              text-align: center;
-              font-family: 'Questrial', sans-serif;
-              font-weight: lighter;
-              margin-top: 3px;
-              font-size: 0.5em;
-            }
-          }
-        }
-      @media (max-width: 991.98px) {
-        .popular-page{
-          height: auto;
-          div{
-
-            img{
-              min-height: 110px;
-            }
-            h6{
-              font-size: 0.35em;
-            }
-          }
-        }
+@media (max-width: 991.98px) {
+  .popular-page {
+    height: auto;
+    div {
+      img {
+        min-height: 110px;
       }
+      h6 {
+        font-size: 0.35em;
+      }
+    }
+  }
+}

@@ -8,21 +8,19 @@
     margin-bottom: 35px;
     text-align: center;
     font-family: "Dancing Script";
-    color: #705b19;
+    color: #705b19 !important;
   }
 
   .preview {
     display: flex;
     justify-content: space-between;
-
-    
   }
 }
 
-@media (max-width: 767.98px){
- .collection-preview {
-   .title {
-     font-size: 30px;
-   }
- }
+@media (max-width: 767.98px) {
+  .collection-preview {
+    .title {
+      font-size: 30px;
+    }
+  }
 }

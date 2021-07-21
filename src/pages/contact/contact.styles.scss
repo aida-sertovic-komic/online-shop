@@ -1,88 +1,92 @@
-.contact-page{
-        padding-top: 60px ;
-        table {
-            width: 100%;
-            height: 60vh;            
+.contact-page {
+  padding-top: 100px;
+  padding-bottom: 150px;
 
-            .firstColumn{
-                width: 40%
-            }
-            .secondColumn {
-                width: 20%;
-                background-color: transparent;
-                margin-top: 0px;
+  table {
+    width: 100%;
+    height: 60vh;
 
-                h2{
-                    text-align: center;
-                    font-family: "Dancing Script", cursive;
-                    margin-bottom: -10px;
-                }
-
-                .contact-form{
-                    margin-top: 0;
-
-                
-
-                    // textarea {
-                    //     width: 100%;
-                    //     height: 35px;
-                    //     border: 0;
-                    //     overflow: auto;
-                    //     padding-left: 4px;
-                    //     padding-top: 5px;
-                    //     border-bottom: 1px solid grey;
-
-                    //    &:focus {
-                    //        height: 70px;
-                    //        border: 0 !important;
-                    //    }
-                    // }
-                   
-
-                    .button{
-                        text-align: center;
-                        margin-top: 0px;
-                        min-width: 165px;
-                        width: 100%;
-                        height: 50px;
-                        border: 1px solid black;
-                        background:black;
-                        color: #d4af37;
-                        cursor: pointer;
-
-                        &:hover{
-                        background-color: white;
-                        border: 1px solid black;
-                        color: black;
-                        }
-                    }
-                }
-                
-            }
-            .thirdColumn{
-                width:40%;
-            }
-        }
+    .firstColumn {
+      width: 35%;
     }
+
+    .secondColumn {
+      width: 30%;
+      background-color: transparent;
+      margin-top: 0px;
+
+      h2 {
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        margin-bottom: -10px;
+      }
+
+      .contact-form {
+        margin-top: 0;
+
+        // textarea {
+        //     width: 100%;
+        //     height: 35px;
+        //     border: 0;
+        //     overflow: auto;
+        //     padding-left: 4px;
+        //     padding-top: 5px;
+        //     border-bottom: 1px solid grey;
+
+        //    &:focus {
+        //        height: 70px;
+        //        border: 0 !important;
+        //    }
+        // }
+
+        .button {
+          text-align: center;
+          margin-top: 0px;
+          min-width: 165px;
+          width: 100%;
+          height: 50px;
+          border: 1px solid black;
+          background: black;
+          color: #d4af37;
+          cursor: pointer;
+
+          &:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+          }
+        }
+      }
+    }
+
+    .thirdColumn {
+      width: 35%;
+    }
+  }
+
+  #successMessage {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+}
 
 @media (max-width: 767.98px) {
-    .contact-page{
-        table{
-            .firstColumn{
-                width: 30%;
-            }
-            .secondColumn{
-                width: 40%;
-                padding-bottom: 80px;
-                padding-left: 70px;
-                h2{
-                    font-size: 24px;
-                }
-            }
-            .thirdColumn{
-                width: 30%;
-            }
+  .contact-page {
+    table {
+      .firstColumn {
+        width: 30%;
+      }
+      .secondColumn {
+        width: 40%;
+        padding-bottom: 80px;
+        padding-left: 70px;
+        h2 {
+          font-size: 24px;
         }
+      }
+      .thirdColumn {
+        width: 30%;
+      }
     }
-    
+  }
 }
